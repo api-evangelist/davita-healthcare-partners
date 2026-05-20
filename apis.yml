@@ -27,6 +27,10 @@ position: Consumer
 access: 3rd-Party
 apis: []
 common:
+  - type: GitHubOrganization
+    url: https://github.com/davita
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/davita-healthcare-partners
   - type: Website
     url: https://www.davita.com
   - type: Investor Relations
