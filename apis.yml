@@ -42,7 +42,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/davita-healthcare-partners/refs/heads/main/apis.yml
 created: '2026-03-24'
-modified: '2026-04-28'
+modified: '2026-09-05'
 specificationVersion: '0.23'
 kind: company
 position: Consuming
@@ -65,6 +65,12 @@ common:
     url: https://davita.com/partners/
   - url: https://newsroom.davita.com/feed/
     type: Blog
+  - type: LLMsTxt
+    url: llms/davita-healthcare-partners-llms.txt
+  - type: PrivacyPolicy
+    url: https://davita.com/privacy-policy/
+  - type: TermsOfService
+    url: https://davita.com/terms-of-use/
 integrations:
   - name: Hospitals
   - name: Health Plans
@@ -74,3 +80,30 @@ integrations:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    DaVita is a dialysis and kidney-care clinic operator, not a software vendor: contract
+    discovery across 14 DaVita-controlled hosts on 2026-09-05 found no OpenAPI, GraphQL,
+    MCP, A2A card or /.well-known/ document anywhere, api.davita.com answers a bare 404 on
+    every path as a partner/VPN gateway with no public surface, github.com/davita has zero
+    public repositories, and the HealthCare Partners half of the legacy merged entity was
+    divested in 2019 — healthcarepartners.com now redirects to Optum California.
+  evidence:
+    - url: https://api.davita.com/openapi.json
+      status: 404
+    - url: https://www.davita.com/.well-known/security.txt
+      status: 404
+    - url: https://davita.com/llms.txt
+      status: 404
+    - url: https://api.github.com/users/davita/repos
+      status: 200
+    - url: https://healthcarepartners.com/
+      status: 200
+  checked: '2026-09-05'

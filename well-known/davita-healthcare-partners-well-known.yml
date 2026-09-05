@@ -1,0 +1,705 @@
+generated: '2026-09-05'
+method: probed
+source: live HTTPS probes of the named /.well-known/ path list plus /apis.json and /apis.yml, 2026-09-05
+summary:
+  hosts_probed: 14
+  paths_per_host: 12
+  documents_found: 0
+  catch_all_hosts: 5
+  note: 'DaVita publishes no /.well-known/ discovery surface on any host this record knows. Nine hosts
+    return a real 404 for every named path; five (davitaventuregroup.com, physicians.davita.com, my.davita.com,
+    placementportal.davita.com, oneviewdps.davita.com) are catch-all SPA/WordPress hosts that answer 200
+    with the same HTML for every path including a random negative-control path, so none of their 200s
+    is a document. No WellKnown or SecurityTxt pointer is emitted: this file records an absence, not a
+    presence.'
+hosts:
+- host: https://www.davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-40dfa39d.json
+    status: 404
+    bytes: 206262
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-4acbd537.json
+    status: 404
+    bytes: 206262
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://api.davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-ce20fddd.json
+    status: 404
+    bytes: 0
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://investors.davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-d39eb54c.json
+    status: 404
+    bytes: 89957
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://newsroom.davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-fdd03606.json
+    status: 404
+    bytes: 49179
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://kidneycare.davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-bb80c5dd.json
+    status: 404
+    bytes: 148920
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://ckcc.davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-463b0bab.json
+    status: 404
+    bytes: 161520
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://local.davita.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-d1f7a1dd.json
+    status: 404
+    bytes: 156191
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://villagehealth.com
+  hit_count: 0
+  path_echo_control: passed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-efcedd77.json
+    status: 404
+    bytes: 160532
+    note: host correctly 404s a path that cannot exist
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: https://davitaventuregroup.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-4ee7d8c8.json
+    status: 200
+    bytes: 281120
+    note: "host answers 2xx for a path that cannot exist \u2014 every 2xx on this host is discarded"
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+- host: https://physicians.davita.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-faed5b33.json
+    status: 200
+    bytes: 279637
+    note: "host answers 2xx for a path that cannot exist \u2014 every 2xx on this host is discarded"
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+- host: https://my.davita.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-b991b6ea.json
+    status: 200
+    bytes: 400791
+    note: "host answers 2xx for a path that cannot exist \u2014 every 2xx on this host is discarded"
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+- host: https://placementportal.davita.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-e1ba5eaf.json
+    status: 200
+    bytes: 67426
+    note: "host answers 2xx for a path that cannot exist \u2014 every 2xx on this host is discarded"
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+- host: https://oneviewdps.davita.com
+  hit_count: 0
+  path_echo_control: failed
+  soft_404_control:
+    path: /.well-known/davita-healthcare-partners-negative-control-baf0adb3.json
+    status: 200
+    bytes: 81161
+    note: "host answers 2xx for a path that cannot exist \u2014 every 2xx on this host is discarded"
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /apis.yml
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/aauth-resource.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: "HTML shell returned by the host catch-all, not a document \u2014 not counted as a hit"
